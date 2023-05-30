@@ -7,5 +7,4 @@ public class BooleanExample1 {
 		boolean isEven = false;
 		boolean isAdult = true;
 	}
-
 }

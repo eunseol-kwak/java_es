@@ -16,8 +16,6 @@ public class CharExample1 {
       // \n : 엔터, \t : 탭키만큼 공백, \\ : \문자, \' : '문자, \" : "문자
       char ch5 = '\u0041', ch6 = 65, ch7 = '\n', ch8 = '\\';
       
-    		  
-      
 	}
 
 }

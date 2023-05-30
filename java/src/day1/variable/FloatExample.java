@@ -10,5 +10,4 @@ public class FloatExample {
 		//접미사 f나 F를 붙여야 함
 		float num2 = 3.14F;
 	}
-
 }
