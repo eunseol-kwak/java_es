@@ -28,7 +28,9 @@ public class ScannerEx {
 		System.out.println(str2);
 		
 		System.out.println("문자를 입력하세요.");
-		char ch = sc.next().charAt(0); //next()를 이용하여 한 단어를 읽어오고 읽어온 단어의 첫글자를 가져옴
+		//next()를 이용하여 한 단어를 읽어오고 
+		//charAt(0)를 이용하여 읽어온 단어의 첫글자를 가져옴
+		char ch = sc.next().charAt(0); 
 		System.out.println(ch);
 		
 		sc.close(); //close()로 닫지 않아도 크게 문제는 없지만 안쓰면 주의표시가 생김
