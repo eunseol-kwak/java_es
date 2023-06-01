@@ -16,12 +16,12 @@ public class Ex4_even {
 		
 		//num를 2로 나누었을때 나머지가 0이 아니다.
 		if(num % 2 != 0) {
-			System.out.println(num + " is an even number");		
+			System.out.println(num + " is an odd number");		
 		}
 		
 		//num를 2로 나누었을때 나머지가 0이다.
 		if(num % 2 == 0) {
-			System.out.println(num + " is an odd number");
+			System.out.println(num + " is an even number");
 		}
 		sc.close();
 	}
