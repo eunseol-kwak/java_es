@@ -13,11 +13,14 @@ public class Ex1_conditional {
 		 * Are you a woman? true
 		 * */
 		
-		Scanner sc = new Scanner(System.in);
-		String str = sc.nextLine();
-		System.out.println("input gender: ");
-		
-	
+		//문제가 주어졌을때 무엇을 출력해야할지, 하기전에 어떤것이 먼저 필요할까?
+		//1. 변수선언, 2. 입력받으려면 스캐너->종료창 
+		char gender; //변수 선언
+		Scanner sc = new Scanner(System.in); // 입력 받음
+		System.out.println("input gender: "); //안내 문구
+		gender = sc.next().charAt(0); //nextLine();은 엔터치면 빈문자열이 생길수 있기떄문에 안됨
+		boolean result = gender == 'W' ? true : false;
+		System.out.println("Are you a woman? " + result);
+		sc.close();
 	}
-
 }
