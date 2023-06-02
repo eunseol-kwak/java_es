@@ -22,6 +22,7 @@ public class ComparisonEx {
 		System.out.println("str1 == str2 : " + (str1 == str2));
 		System.out.println("str1 == str3 : " + (str1 == str3));
 		System.out.println("str2 == str3 : " + (str2 == str3));
+		
 		/* 문자열을  포함한 참조 변수들은 주로 equals를 이용하여 같은지 다른지를 판별
 		 * */
 		System.out.println("str1.equals(str2): " + str1.equals(str2));
