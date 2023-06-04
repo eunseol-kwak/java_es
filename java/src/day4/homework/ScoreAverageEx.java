@@ -12,17 +12,13 @@ public class ScoreAverageEx {
 		int korScore;
 		int engScore;
 		int mathScore;
-		int average;
 		Scanner sc = new Scanner(System.in);
 		System.out.println("input score: ");
 		korScore = sc.nextInt();
 		engScore = sc.nextInt();
 		mathScore = sc.nextInt();
-		average = sc.nextInt();
-		
-		
-		average = ((korScore + engScore + mathScore)/3);
-		System.out.println(average + " is an average score");
+		int avg = (korScore + engScore + mathScore)/3; 
+			System.out.println("Average is " + avg);
 
 	}
 
