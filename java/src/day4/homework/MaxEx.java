@@ -23,3 +23,28 @@ public class MaxEx {
 	}
 
 }
+		/* Teacher's
+		 int num1, num2;
+		 int max; // 두 수 중 큰 수를 저장할 변수
+		 Scanner sc = new Scanner(System.in);
+		 //두 정수를 입력
+		 System.out.println("input 2 integer nums: "); 
+		 num1 = sc.nextInt();
+	     num2 = sc.nextInt(); 
+		 //큰 수를 max에 저장
+		 //num1이 num2보다 크거나 같으면 max에 num1를 저장
+		 if(num1 >= num2) {
+		 	max = num1;
+		 }
+		 //아니면 max에 num2를 저장
+		 else {
+		 	max = num2;
+		 }
+		 //max를 출력
+		 System.out.println(num1 + "과 " + num2 + "중 더 큰 수는 " + max + "입니다.");
+		 sc.close();
+		 
+		 // 조건연산자로
+		  max = 100;
+		  max = num1 >= num2 ? num1 : num2;
+		  */
