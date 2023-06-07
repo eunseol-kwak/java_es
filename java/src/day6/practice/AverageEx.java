@@ -6,9 +6,14 @@ public class AverageEx {
 
 	public static void main(String[] args) {
 		/*
-		 * 국어, 영어, 수학 성적을 입력받아 평균을 구하는 코드를 작성하세요. n을 입력하기 전까지. input score(kor, eng,
-		 * math) : 10 20 30 average : 20.0 continue?(y/n) : y input 3 score(kor, eng,
-		 * math) : 90 95 100 average : 95.0 continue?(y/n) : n EXIT!
+		 * 국어, 영어, 수학 성적을 입력받아 평균을 구하는 코드를 작성하세요. n을 입력하기 전까지. 
+		 * input score(kor, eng, math) : 10 20 30 
+		 * average : 20.0 
+		 * continue?(y/n) : y 
+		 * input 3 score(kor, eng,math) : 90 95 100 
+		 * average : 95.0 
+		 * continue?(y/n) : n 
+		 * EXIT!
 		 */
 
 		int kor, eng, math;
