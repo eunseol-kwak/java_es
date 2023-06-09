@@ -30,18 +30,18 @@ public class StarEx4 {
 			 * 반복횟수: j는 1부터 i까지 1씩 증가
 			 * 규칙성: *을 출력 
 			 * */
-				for(int j = 1; j <= i; j++) {   //i를 2*(i-1)로 해도 같음
-				System.out.print('*');
-				}
+			for(int j = 1; j <= i; j++) {   //i를 2*(i-1)로 해도 같음
+			System.out.print('*');
+			}
 			
 			// * i-1개를 출력
 				/* 내부 반복문
 				 * 반복횟수: j는 1부터 i-1까지 1씩 증가
 				 * 규칙성: *을 출력 
 				 * */
-					for(int j = 1; j <= i-1; j++) {
-					System.out.print('*');
-					}
+			for(int j = 1; j <= i-1; j++) {
+			System.out.print('*');
+			}
 		System.out.println();
 		}
 	}
