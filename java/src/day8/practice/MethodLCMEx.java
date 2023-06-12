@@ -2,7 +2,7 @@ package day8.practice;
 
 import java.util.Scanner;
 
-public class MethodLCMEx {               //Git보고 다시해야함!!!!
+public class MethodLCMEx {              
 
 	public static void main(String[] args) {
 		/* 정수 num1과 num2를 입력받아 두 정수의 최소 공배수를 구하는 코드를 작성하세요.
