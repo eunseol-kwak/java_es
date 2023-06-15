@@ -24,6 +24,7 @@ public class Word {
 	//복사생성자
 	public Word(Word w) {
 		this.title = w.title;
+		this.meaning = new String[5]; //기본 5개
 		for(int i = 0; i < w.meaningCount; i++) {
 			meaning[i] = w.meaning[i];
 		}
