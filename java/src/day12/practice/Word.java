@@ -1,9 +1,12 @@
 package day12.practice;
 
+import lombok.Data;
+
 /* 한 단어를 관리하는 클래스
  * - 단어
  * - 뜻들 
  * */
+@Data // getter, setter, toString, equals를 추가
 public class Word {
 	//멤버 변수
  	private String title;
@@ -75,5 +78,28 @@ public class Word {
 		meaning[meaningCount-1] = null;
 		//제거 됐으면 뜻 개수를 하나 줄임
 		meaningCount--;
-	}	
+	}
+	//getter
+	public String getTitle() {
+		return title;
+	}
+	//setter
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	/**수정할 뜻의 번호와 수정할 뜻이 주어지면 뜻을 수정하고 수정 여부를 알려주는 메서드
+	 * 매개변수: 수정할 뜻의 번호, 수정할 뜻 => int meaningNumx, String meaning
+	 * 리턴타입: 수정 여부 => boolean
+	 * 메서드명: updateMeaning
+	 * */
+	public boolean updateMeaning(int meaningNum, String meaning) {
+		//수정할 뜻의 번호가 잘못된 경우
+		if(meaningNum > meaningCount || meaningNum <= 0) {
+			return false;
+		}
+		//meaningNum는 1부터이고, 번지는 0부터 이기 때문에 -1을 한다
+		this.meaning[meaningNum-1] = meaning;
+		return true;
+	}
+	
 }
