@@ -19,6 +19,14 @@ public class Product {
 		this.amount = amount;
 		this.category = category;
 	}	
+	//복사 생성자
+	public Product(Product product) {
+		this.name = product.name;
+		this.modelName = product.modelName;
+		this.price = product.price;
+		this.amount = product.amount;
+		this.category = product.category;
+	}
 	//메서드
 	//setAmount는 수량변경만 가능, 누적은X	
 	/**제품 입고 기능 => 현재 수량에서 주어진 수량을 누적*/
@@ -41,6 +49,14 @@ public class Product {
 	
 	private void accumulate(int amount) {
 		this.amount += amount;
+	}
+	public void print() {
+		System.out.println("제품명 : " + name);
+		System.out.println("모델명 : " + modelName);
+		System.out.println("분류 : " + category);
+		System.out.println("제고 : " + amount);
+		System.out.println("가격 : " + price);
+		
 	}
 	
 }
