@@ -71,7 +71,6 @@ public class ShopManager {
 		
 		switch(menu) {
 		case 1: 
-			System.out.println("제품 판매 기능 구현 예정");
 			sell();
 			break;
 		case 2:
@@ -87,7 +86,6 @@ public class ShopManager {
 			registerCustomer();
 			break;
 		case 6: 
-			System.out.println("프로그램 종료!");
 			break;	
 		default:
 			System.out.println("잘못된 메뉴!");
