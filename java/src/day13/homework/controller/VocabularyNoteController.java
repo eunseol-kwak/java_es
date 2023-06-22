@@ -1,10 +1,10 @@
 package day13.homework.controller;
 
 import java.util.Scanner;
-
 import day13.homework.vo.VocabularyNote;
+import day17.interfaceEx.RunInterface;
 
-public class VocabularyNoteController {
+public class VocabularyNoteController implements RunInterface{
 	//입력 받을게 많아서 멤버변수로 둠
 	private Scanner sc = new Scanner(System.in);
 	//메뉴에 단어 추가,삭제등 계속필요/멤버로 안하면 매개변수로 계속 넘겨 줘야함
