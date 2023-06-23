@@ -1,6 +1,7 @@
 package day18.homework;
 
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class ImgEx {
 
@@ -16,14 +17,16 @@ public class ImgEx {
 		//파일명 입력
 		Scanner sc = new Scanner(System.in);
 		System.out.println("input: ");
-		String str = sc.nextLine();
+		String str = sc.next();
+		String regex = "^[a-zA-Z\\.]jpg|bmp|png$";
+		boolean result = Pattern.matches(regex, str);
+	
 		
-		if(str == "jpg"|| str == "bmp" || str == "png") {
-			System.out.println(str + " : " + " Image");
+		if(result == true) {
+			System.out.println(str + " : " + "Image");
 		}else { 
 			System.out.println(str + " : " + "Not image");
 		}
-		
 		
 		
 		sc.close();
