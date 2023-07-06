@@ -14,7 +14,6 @@ public class Book implements Serializable{
 	private String number, title, author, isbn;		
 	
 	private boolean loan; 				//대출여부 관리 true-> 대출 못함
-	private boolean returnManager; 		//반납여부 관리 true-> 반납 못함
 	
 	public String toString() {
 		return 	"도서번호 : " + number+ "\n" +
