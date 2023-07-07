@@ -84,6 +84,7 @@ public class GameController {
 		List<Integer> user = new ArrayList<>();
 		int count = 0;
 		do {
+			user.clear(); //출력 후 기존 입력값 지워줌
 			//사용자가 입력
 			System.out.print("user : ");
 			for(int i = 0; i < 3; i++) {
@@ -97,7 +98,6 @@ public class GameController {
 			}
 			//결과 출력
 			bbGame.printResult();
-			user.clear(); //출력 후 기존 입력값 지워줌
 			count++; 
 		}while(bbGame.getStrike() != 3); //3strike까지 반복
 		//기록 관리(개수제한X)
