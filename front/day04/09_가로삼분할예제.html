@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>삼분할 예제</title>
+	<style>
+		.container{
+			width: 300px; padding: 10px;
+			background-color: cadetblue; 
+		}
+		.box{
+			height: 50px; background-color:lemonchiffon;
+			/* width:300px; =>부모 너비 구하기 귀찮으면 자식요소에 추가후 부모(container)에 float:left;추가 */
+		}
+		.box+.box{margin-top: 10px}
+		.box2{
+			width: 50px; height: 50px; background-color: green;
+			margin-left: 10px; float: right; 
+			/* float right: 조심 321로 보임 */
+		}
+		.bar{
+			clear:both;	
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+	<div class="bar"></div>
+	<div class="container2">
+		<div class="box2">1</div>
+		<div class="box2">2</div>
+		<div class="box2">3</div>
+	</div>
+</body>
+</html>
