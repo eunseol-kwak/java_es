@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* 
+		opacity
+		- 요소의 투명도를 조절하는 속성(0~1사이값)
+		- 0: 완전투명 /1: 완전불투명
+		- 부모요소의 투명도가 1이 아니면, 자식요소의 투명도를 1로해도 1로 적용되지 않음
+		  => 문제해결방법: rgba()를 이용해서 해결
+			이미지는 opacity써야함, 배경은 rgba를 통해 가능
+		*/
+		main{height: 500px; background-color: red;}
+		.box{
+			position: absolute; top:0; left:0; right:0; bottom: 0; 
+			/* background-color: black; opacity: 0.3; */
+			background-color: rgba(0,0,0,.3);
+		}
+		.inner-box{
+			color: #fff; text-align: center; font-size: 30px;
+			font-weight: bold; opacity: 1; 
+		}
+	</style>
+	<title>투명도 예제</title>
+</head>
+<body>
+	<div class="box">
+		<div class="inner-box">안녕하세요.</div>
+	</div>
+	<main>
+		컨텐츠
+	</main>
+</body>
+</html>
