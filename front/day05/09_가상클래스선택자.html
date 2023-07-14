@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>가상클래스 선택자</title>
+	<style>
+		/*
+		:★first-child: 첫번째 요소를 선택
+		:★last-child: 마지막 요소를 선택
+		:nth-child(정수): 정수번째 요소를 선택
+		:nth-child(2n): 짝수번째 요소를 선택/수열 홀수=(2n+1)
+		
+		:first-of-type: 첫번째 요소를 선택
+		:last-of-type: 마지막 요소를 선택
+		:nth-of-type(정수): 정수번째 요소를 선택
+		:nth-of-type(2n): 짝수번째 요소를 선택/수열 홀수=(2n+1)
+		
+		:nth-child과 :nth-of-type의 차이점
+		- child는 태그가 달라도 상관이 없음
+		- of-type은 같은 태그들 중에서 선택. 일반적으로 앞에 태그명을 사용
+		*/
+		.list :first-of-type{ color: red;}	/*list자손중 첫번째 태그/각 태그마다 첫번째*/
+		.box :first-of-type{ color: red;}	/*태그별로 각각 적용*/
+
+		.list :first-child{ font-size: 30px;}/*태그종류에 상관없이 무조건 첫번째 요소에 적용*/
+		.box :first-child{ font-size: 30px;} 
+
+		.list :nth-child(3){ color: green;} /*3번째 요소에*/
+		.box :nth-child(3){ color: green;}
+		.list :nth-child(2n+1){background-color: yellow;}
+
+		/*
+		input태그 관련된 선택자 
+		:checked : 체크된 요소
+		:focus : 활성화된 요소. 클릭이나 탭으로 요소를 선택했을때
+		:enabled : 사용 가능한 요소
+		:disabled : 사용 불가능한 요소
+		:not(선택자) : 선택자가 아닌 요소들 
+		*/
+		.check:checked+.name{ /*체크하면 배경화면 회색으로 변경하는 예제*/
+			background: gray;
+		}
+		.id:focus{
+			background-color: yellow;
+		}
+		input:enabled{
+			border: 1px solid red;
+		}
+		input:disabled{
+			border: 1px solid green;
+		}
+		.box>:not(input){ /*box class에서 input태그가 아닌 요소들 변경*/
+			background: gray;
+		}
+	</style>
+</head>
+<body>
+	<ul class="list">
+		<li class="link">안녕하세요.</li>
+		<li class="link">제 이름은 홍길동입니다.</li>
+		<li class="link">만나서 반갑습니다.</li>
+	</ul>
+	<div class="box">
+		<a href="#" class="link">링크</a>
+		<button class="link">버튼</button>
+		<div class="link">박스</div>
+		<a href="#" class="link">링크</a>
+		<button class="link">버튼</button>
+		<div class="link">박스</div>
+	</div>
+	<div class="box">
+	  <input type="checkbox" name="" class="check">
+	  <span class="name">홍길동</span>
+		<input type="text" class="id" placeholder="id를 입력하세요"> <br>
+		<input type="text" class="readonly" readonly>
+		<input type="text" class="disabled" disabled>
+	</div> 	
+	</body>
+</html>
